@@ -22,3 +22,23 @@ header {
     font-size: 40px;
     padding: 50px 0;
 }
+
+.content {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 3px solid #eee;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #666;
+}
