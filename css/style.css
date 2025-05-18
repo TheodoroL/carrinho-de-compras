@@ -42,3 +42,25 @@ th {
     text-transform: uppercase;
     color: #666;
 }
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    border-radius: 6px;
+}
+
+.product .info {
+    margin-left: 20px;
+}
+
+.product .info .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product .info .category {
+    color: #666;
+}
