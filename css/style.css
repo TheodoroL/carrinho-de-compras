@@ -64,3 +64,34 @@ th {
 .product .info .category {
     color: #666;
 }
+
+.quantity {
+    background-color: #eee;
+    display: inline-flex;
+    padding: 0 0;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.quantity span {
+    margin: 0 10px;
+}
+
+.quantity button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0px;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.quantity button :hover {
+    background-color: #ddd;
+}
