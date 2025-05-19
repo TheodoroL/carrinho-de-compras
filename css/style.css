@@ -8,7 +8,7 @@ body {
     font-family: 'lata', sans-serif;
 }
 
-header {
+.header-title {
     background-color: #8625d2;
     color: #fff;
     padding: 20px 0;
