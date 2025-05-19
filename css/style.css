@@ -150,3 +150,20 @@ th {
     margin-bottom: 10px;
     color: #555;
 }
+
+.details button {
+    color: #ff3a2f;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    border: 0;
+    font-size: 16px;
+}
+
+footer {
+    padding: 15px 20px;
+    background-color: #ddd;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
