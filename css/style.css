@@ -167,3 +167,20 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+
+.finalize-purchase {
+    border: 0;
+    padding: 15px 0;
+    color: #fff;
+    display: block;
+    width: 100%;
+    background: #ff3a2f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.finalize-purchase:hover {
+    background: #3bc55b;
+    cursor: pointer;
+}
