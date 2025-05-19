@@ -25,6 +25,12 @@ header {
 
 .content {
     display: flex;
+    padding: 1em;
+}
+
+.content section {
+    /* o conteudo vai ocupar todo espaço */
+    flex: 1
 }
 
 table {
