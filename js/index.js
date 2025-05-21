@@ -25,3 +25,42 @@ const products = [
         quantity: 1
     }
 ]
+
+const cartItemSection = document.querySelector("#card-items");
+function renderCartItems() {
+    products.forEach(product => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+        <td>
+        <div class="product">
+          <img 
+            src="${product.image}" 
+            height="100" 
+            width="100" 
+            alt="${product.name}" 
+          />
+          <div class="info">
+            <div class="name">${product.name}</div>
+            <div class="category">${product.category}</div>
+          </div>
+        </div>
+      </td>
+      <td>R$ ${product.price.toFixed(2)}</td>
+      <td>
+          <div class="quantity">
+          <button onclick="decreaseQuantity(${product.id})">
+              <i class="bx bx-minus"></i>
+          </button>
+          <span>${product.quantity}</span>
+          <button onclick="increaseQuantity(${product.id})">
+              <i class="bx bx-plus"></i>
+          </button>
+          </div>
+      </td>
+    `
+        cartItemSection.appendChild(row);
+    });
+
+}
+//Executar um código assim que o HTML da página for completamente carregado e analisado pelo navegador, antes do carregamento completo de imagens, estilos e outros recursos externos.
+document.addEventListener("DOMContentLoaded", renderCartItems);
