@@ -20,17 +20,20 @@ const products = [
         id: 3,
         name: "Headset",
         category: "Periféricos",
-        price: 500.00,
+        price: 700.00,
         image: "./images/headset.jpg",
         quantity: 1
     }
 ]
 
-const cartItemSection = document.querySelector("#card-items");
 function renderCartItems() {
+    const cartItemSection = document.querySelector("#card-items");
+    const subTotalElement = document.querySelector("#sub-total");
+    let subTotal = 0;
     products.forEach(product => {
         const row = document.createElement("tr");
         const itemTotal = product.price * product.quantity;
+        subTotal += itemTotal;
         row.innerHTML = `
         <td>
         <div class="product">
@@ -67,6 +70,7 @@ function renderCartItems() {
     `
         cartItemSection.appendChild(row);
     });
+    subTotalElement.textContent = `R$ ${subTotal.toFixed(2)}`;
 
 }
 //Executar um código assim que o HTML da página for completamente carregado e analisado pelo navegador, antes do carregamento completo de imagens, estilos e outros recursos externos.
