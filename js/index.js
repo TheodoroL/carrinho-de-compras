@@ -93,5 +93,15 @@ function decreaseQuantity(productId) {
 }
 
 
+function removeProduct(productId) {
+  const index = products.findIndex(product => product.id == productId);
+
+  if (index != -1) {
+    products.splice(index, 1);
+    renderCartItems();
+  }
+}
+
+
 // Chama renderização inicial
 document.addEventListener("DOMContentLoaded", renderCartItems);
