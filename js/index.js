@@ -28,6 +28,7 @@ const products = [
 function renderCartItems() {
   const cartItemSection = document.querySelector("#card-items");
   const subTotalElement = document.querySelector("#sub-total");
+  const totalElement = document.querySelector("#total");
   cartItemSection.innerHTML = "";
 
   let subTotal = 0;
@@ -73,6 +74,7 @@ function renderCartItems() {
     cartItemSection.appendChild(row);
   });
 
+  totalElement.textContent = `R$ ${subTotal.toFixed(2)}`;
   subTotalElement.textContent = `R$ ${subTotal.toFixed(2)}`;
 }
 
